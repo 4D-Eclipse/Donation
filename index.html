@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="En">
 
 <head>
     <meta charset="UTF-8">
@@ -44,11 +44,36 @@
             color: yellow;
             border: 1px solid yellow;
         }
+
+        .language-dropdown {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .dropdown-menu {
+            background-color: yellow;
+            color: black;
+        }
+
+        .dropdown-item {
+            background-color: yellow;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="dropdown language-dropdown mb-3">
+        <button class="btn btn-warning dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            🌍
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="https://4d-eclipse.github.io/Donation-Fa/">فارسی</a></li>
+        </ul>
+    </div>
     <div class="container">
         <h2>Donation to 4D-Eclipse</h2>
 
